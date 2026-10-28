@@ -26,11 +26,13 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          # Create/enable Pages site if not yet configured for Actions
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Entire repo is the static site (no build)
           path: .
 
       - name: Deploy to GitHub Pages
