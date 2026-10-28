@@ -1,0 +1,3 @@
+# Cloudflare Pages redirects
+/quantumguard  /products/quantumguard.html  301
+/qg            /products/quantumguard.html  301
