@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChangeOrderSeal — Operator Pages</title>
+  <meta name="description" content="ChangeOrderSeal: local-first change-order / extra-work authorizer and QuantumGuard sealer for field operators. Offline. Deterministic. Pay once." />
+  <link rel="stylesheet" href="../css/site.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="../" class="logo">Operator <span>Pages</span></a>
+      <nav class="nav-links">
+        <a href="./">Products</a>
+        <a href="quantumguard.html">QuantumGuard</a>
+        <a href="../docs/">Docs</a>
+        <a href="../faq.html">FAQ</a>
+        <a href="../access.html">Access</a>
+        <a class="nav-cta" href="https://buy.stripe.com/5kQaEYc9AewBaJleoN0ZW01" target="_blank" rel="noopener">$490</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section style="border-top:none;padding-top:48px">
+      <div class="container">
+        <h1 style="font-size:clamp(1.8rem,4vw,2.4rem);font-weight:800;letter-spacing:-0.03em;margin-bottom:12px;line-height:1.2">ChangeOrderSeal</h1>
+        <p class="lead" style="margin-bottom:24px">Local-first change-order / extra-work authorizer. Capture the scope change on-site. Seal the proof. Offline.</p>
+
+        <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:28px">
+          <div class="price">from $79<span style="font-size:0.95rem;font-weight:500;color:var(--muted);margin-left:6px">one-time · Operator SKU</span></div>
+          <a href="mailto:danpennic@gmail.com?subject=ChangeOrderSeal%20purchase" class="cta">Buy / Request access →</a>
+        </div>
+
+        <div class="box" style="margin-bottom:28px">
+          <strong style="color:var(--white)">Free:</strong> source on GitHub
+          (<a class="ext" href="https://github.com/danpennic-sys/changeorderseal" target="_blank" rel="noopener">github.com/danpennic-sys/changeorderseal</a>).<br><br>
+          <strong style="color:var(--white)">Paid Operator / Command / Agency packs:</strong> support, batch tools, HTML acknowledgment form, reseller rights, white-label options.
+        </div>
+
+        <h2>What it does</h2>
+        <ul style="margin:0 0 16px 1.2em;color:var(--muted)">
+          <li style="margin-bottom:8px">Records change description, reason, labor hours/rate, materials, estimated total</li>
+          <li style="margin-bottom:8px">Captures client acknowledgment name + signature note</li>
+          <li style="margin-bottom:8px">Optional media hashes (pair with MediaSeal)</li>
+          <li style="margin-bottom:8px">Seals into a QuantumGuard CONTRACT-v1 evidence pack (Ed25519)</li>
+          <li style="margin-bottom:8px">Client verifies offline with free <code>qg verify</code> → PASS / FAIL / INDETERMINATE</li>
+        </ul>
+
+        <h2>SKU options</h2>
+        <table>
+          <tr><th>SKU</th><th>Price</th><th>Includes</th></tr>
+          <tr><td>Operator</td><td>$79</td><td>CLI + templates + key setup + 1-year email support</td></tr>
+          <tr><td>Command</td><td>$199</td><td>+ batch mode + HTML acknowledgment form + reseller rights</td></tr>
+          <tr><td>Agency</td><td>$499</td><td>+ white-label HTML + design partner onboarding</td></tr>
+        </table>
+
+        <h2>Stack fit</h2>
+        <p style="color:var(--muted);margin-bottom:20px">
+          Same family as VeriQuote, FieldSeal, MediaSeal, JobSeal, CloseSeal, LifecycleSeal.
+          Emits CONTRACT-v1 packs. Use after the original quote, before or during the extra work.
+          Aggregates cleanly into LifecycleSeal and feeds Chaser for invoicing the change.
+        </p>
+
+        <h2>Quick start</h2>
+        <pre style="background:var(--card);padding:16px;border-radius:8px;overflow:auto;color:var(--muted);font-size:0.9rem;margin-bottom:24px">pip install cryptography
+python3 src/changeorderseal.py --demo
+python3 src/changeorderseal.py --order samples/change-001.json --out sealed_change.json
+qg verify sealed_change.json</pre>
+
+        <p style="color:var(--muted);margin-bottom:20px">
+          Purchase and support: <a class="ext" href="mailto:danpennic@gmail.com">danpennic@gmail.com</a>
+        </p>
+        <a href="mailto:danpennic@gmail.com?subject=ChangeOrderSeal%20purchase" class="cta">Email to buy →</a>
+        <a href="https://github.com/danpennic-sys/changeorderseal" class="cta-secondary" target="_blank" rel="noopener" style="margin-left:12px">View source on GitHub →</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>Operator Pages LLC · Missouri, USA</p>
+      <div class="links">
+        <a href="../">Home</a>
+        <a href="./">Products</a>
+        <a href="../docs/">Docs</a>
+        <a href="../faq.html">FAQ</a>
+        <a href="mailto:danpennic@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
