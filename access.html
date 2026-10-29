@@ -4,89 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Access — Operator Pages</title>
-  <meta name="description" content="How to get Operator Pack access after purchase: GitHub collaborator invite or signed tarball + LICENSE.json." />
-  <link rel="canonical" href="https://operatorpages.com/access.html" />
-  <style>
-    :root { --bg:#0a0a0a; --surface:#141414; --border:#2a2a2a; --text:#f0f0f0; --muted:#9a9a9a; --accent:#00e676; --accent-dim:#00c853; --white:#ffffff; }
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:720px;margin:0 auto;padding:0 24px}
-    header{padding:28px 0;border-bottom:1px solid var(--border)}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    .logo{font-size:15px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted)}
-    .logo span{color:var(--accent)}
-    .nav-links{display:flex;gap:20px;font-size:0.9rem;color:var(--muted)}
-    .nav-links a:hover{color:var(--accent)}
-    main{padding:48px 0 80px}
-    h1{font-size:2rem;font-weight:800;letter-spacing:-0.03em;margin-bottom:12px}
-    .lead{color:var(--muted);margin-bottom:32px}
-    h2{font-size:1.15rem;font-weight:700;margin:32px 0 12px;color:var(--white)}
-    ol,ul{margin:0 0 16px 1.3em;color:var(--muted)}
-    li{margin-bottom:10px}
-    .cta{display:inline-block;background:var(--accent);color:#000;font-weight:700;padding:16px 36px;border-radius:8px;margin:20px 0}
-    .cta:hover{background:var(--accent-dim)}
-    .box{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:20px;margin:20px 0;color:var(--muted);font-size:0.95rem}
-    a.ext{color:var(--accent)}
-    a.ext:hover{text-decoration:underline}
-    footer{border-top:1px solid var(--border);padding:32px 0;text-align:center;font-size:0.85rem;color:var(--muted)}
-    footer a{color:var(--accent)}
-    footer .links{margin-top:12px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-  </style>
+  <meta name="description" content="Post-purchase access: GitHub collaborator or signed tarball + LICENSE.json." />
+  <link rel="stylesheet" href="css/site.css" />
 </head>
 <body>
   <header>
     <div class="container nav">
-      <a href="/" class="logo">Operator <span>Pages</span></a>
+      <a href="./" class="logo">Operator <span>Pages</span></a>
       <nav class="nav-links">
-        <a href="/products/">Products</a>
-        <a href="/products/quantumguard.html">QuantumGuard</a>
-        <a href="/docs/">Docs</a>
-        <a href="/access.html">Access</a>
+        <a href="products/">Products</a>
+        <a href="products/quantumguard.html">QuantumGuard</a>
+        <a href="docs/">Docs</a>
+        <a href="faq.html">FAQ</a>
+        <a href="access.html">Access</a>
+        <a class="nav-cta" href="https://buy.stripe.com/5kQaEYc9AewBaJleoN0ZW01" target="_blank" rel="noopener">$490</a>
       </nav>
     </div>
   </header>
   <main>
-    <div class="container">
-      <h1>Access after purchase</h1>
-      <p class="lead">Licensed files are never published on this public site. You get them after payment.</p>
+    <section style="border-top:none;padding-top:48px">
+      <div class="container">
+        <h1 style="font-size:2rem;font-weight:800;letter-spacing:-0.03em;margin-bottom:12px">Access after purchase</h1>
+        <p class="lead" style="margin-bottom:24px">Licensed files are never on this public site.</p>
+        <a href="https://buy.stripe.com/5kQaEYc9AewBaJleoN0ZW01" class="cta" target="_blank" rel="noopener">Checkout $490 →</a>
 
-      <a href="https://buy.stripe.com/5kQaEYc9AewBaJleoN0ZW01" class="cta" target="_blank" rel="noopener">Checkout $490 →</a>
+        <h2 style="margin-top:36px">What you receive</h2>
+        <ol class="steps">
+          <li>GitHub collaborator invite to the private Operator Pack repository, <strong style="color:var(--white)">or</strong></li>
+          <li>Signed release tarball + <code>LICENSE.json</code> by email</li>
+        </ol>
 
-      <h2>What you receive</h2>
-      <ol>
-        <li>GitHub collaborator invite to the private Operator Pack repository, <strong style="color:var(--white)">or</strong></li>
-        <li>A signed release tarball + <code>LICENSE.json</code> delivered by email</li>
-      </ol>
+        <h2>After you have the files</h2>
+        <ol style="margin:0 0 16px 1.3em;color:var(--muted)">
+          <li style="margin-bottom:10px">Place <code>LICENSE.json</code> next to the binary (or set <code>QG_LICENSE_PATH</code>)</li>
+          <li style="margin-bottom:10px">Verify checksums offline against <code>SHA256SUMS</code></li>
+          <li style="margin-bottom:10px">Follow the air-gap runbook</li>
+          <li style="margin-bottom:10px">Run <code>./qg verify path/to/evidence.json</code></li>
+        </ol>
 
-      <h2>After you have the files</h2>
-      <ol>
-        <li>Place <code>LICENSE.json</code> next to the binary (or set <code>QG_LICENSE_PATH</code>)</li>
-        <li>Verify checksums offline against <code>SHA256SUMS</code></li>
-        <li>Follow the air-gap runbook for offline verification</li>
-        <li>Run <code>./qg verify path/to/evidence.json</code> — expect PASS / FAIL / INDETERMINATE</li>
-      </ol>
+        <div class="box">
+          <strong style="color:var(--white)">Important:</strong> Missing or invalid LICENSE.json does <em>not</em> change verifier verdicts. Entitlement and support only. Evidence math remains CONTRACT-v1.
+        </div>
 
-      <div class="box">
-        <strong style="color:var(--white)">Important:</strong> A missing or invalid LICENSE.json does <em>not</em> change verifier verdicts.
-        It gates entitlement and support only. The evidence math remains CONTRACT-v1.
+        <h2>Support</h2>
+        <ul style="margin:0 0 8px 1.2em;color:var(--muted)">
+          <li style="margin-bottom:8px">Email: <a class="ext" href="mailto:danpennic@gmail.com">danpennic@gmail.com</a></li>
+          <li style="margin-bottom:8px">Private issues on the operator repository (collaborators)</li>
+        </ul>
+        <p style="color:var(--muted)">Include: product, license version, binary tag/platform, verdict, minimal vector when possible.</p>
       </div>
-
-      <h2>Support</h2>
-      <ul>
-        <li>Email: <a class="ext" href="mailto:danpennic@gmail.com">danpennic@gmail.com</a></li>
-        <li>Private issues on the operator repository (collaborators)</li>
-      </ul>
-      <p style="color:var(--muted)">Include: product name, license version, binary tag/platform, verdict, and a minimal vector when possible.</p>
-    </div>
+    </section>
   </main>
   <footer>
     <div class="container">
       <p>Operator Pages LLC · Missouri, USA</p>
       <div class="links">
-        <a href="/">Home</a>
-        <a href="/products/">Products</a>
-        <a href="/docs/">Docs</a>
+        <a href="./">Home</a>
+        <a href="products/">Products</a>
+        <a href="docs/">Docs</a>
+        <a href="faq.html">FAQ</a>
         <a href="mailto:danpennic@gmail.com">Contact</a>
       </div>
     </div>
