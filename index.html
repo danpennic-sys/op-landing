@@ -4,79 +4,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Operator Pages — We don't promise anything we prove it.</title>
-  <meta name="description" content="Operator Pages. Deterministic tools for field operators. QuantumGuard evidence verification. Evidence over claims. Pay once. Own it." />
+  <meta name="description" content="Deterministic tools for field operators. QuantumGuard evidence verification. Offline. PASS / FAIL / INDETERMINATE. Pay once." />
   <meta property="og:title" content="Operator Pages — Evidence over claims" />
-  <meta property="og:description" content="Deterministic tools for operators who need evidence, not claims. QuantumGuard + Operator Pack $490 one-time." />
+  <meta property="og:description" content="QuantumGuard + Operator Pack. $490 one-time. Offline verification. No subscriptions." />
   <meta property="og:type" content="website" />
-  <link rel="canonical" href="https://operatorpages.com/" />
-  <style>
-    :root {
-      --bg: #0a0a0a;
-      --surface: #141414;
-      --border: #2a2a2a;
-      --text: #f0f0f0;
-      --muted: #9a9a9a;
-      --accent: #00e676;
-      --accent-dim: #00c853;
-      --white: #ffffff;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      background: var(--bg); color: var(--text); line-height: 1.6; min-height: 100vh;
-    }
-    a { color: inherit; text-decoration: none; }
-    .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
-    header { padding: 28px 0; border-bottom: 1px solid var(--border); }
-    .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-    .logo { font-size: 15px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
-    .logo span { color: var(--accent); }
-    .nav-links { display: flex; gap: 20px; font-size: 0.9rem; color: var(--muted); }
-    .nav-links a:hover { color: var(--accent); }
-    .hero { padding: 80px 0 60px; text-align: center; }
-    .hero h1 { font-size: clamp(2.4rem, 6vw, 3.4rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 20px; }
-    .hero .tagline { font-size: 1.25rem; color: var(--muted); margin-bottom: 40px; font-weight: 500; }
-    .price-block { display: inline-block; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 32px; margin-bottom: 36px; }
-    .price { font-size: 2.8rem; font-weight: 800; letter-spacing: -0.02em; color: var(--white); }
-    .price span { font-size: 1rem; font-weight: 500; color: var(--muted); margin-left: 6px; }
-    .cta { display: inline-block; background: var(--accent); color: #000; font-weight: 700; font-size: 1.1rem; padding: 18px 48px; border-radius: 8px; transition: all 0.2s ease; letter-spacing: -0.01em; }
-    .cta:hover { background: var(--accent-dim); transform: translateY(-1px); }
-    .cta-sub { margin-top: 14px; font-size: 0.85rem; color: var(--muted); }
-    .cta-secondary { display: inline-block; margin-top: 12px; font-size: 0.95rem; color: var(--accent); }
-    .cta-secondary:hover { text-decoration: underline; }
-    section { padding: 60px 0; border-top: 1px solid var(--border); }
-    h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 28px; letter-spacing: -0.02em; }
-    .features { display: grid; gap: 20px; }
-    .feature { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 24px; }
-    .feature h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; color: var(--white); }
-    .feature p { font-size: 0.95rem; color: var(--muted); }
-    .product-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 28px; margin-bottom: 20px; }
-    .product-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 8px; color: var(--white); }
-    .product-card .badge { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: #000; background: var(--accent); padding: 4px 10px; border-radius: 4px; margin-bottom: 12px; }
-    .product-card p { color: var(--muted); margin-bottom: 16px; font-size: 0.95rem; }
-    .product-card a.more { color: var(--accent); font-weight: 600; font-size: 0.95rem; }
-    .product-card a.more:hover { text-decoration: underline; }
-    .proof { text-align: center; }
-    .proof p { font-size: 1.15rem; color: var(--muted); max-width: 520px; margin: 0 auto 32px; }
-    footer { border-top: 1px solid var(--border); padding: 32px 0; text-align: center; font-size: 0.85rem; color: var(--muted); }
-    footer a { color: var(--accent); }
-    footer .links { margin-top: 12px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-    @media (max-width: 600px) {
-      .hero { padding: 60px 0 48px; }
-      .price { font-size: 2.2rem; }
-      .cta { width: 100%; text-align: center; }
-    }
-  </style>
+  <link rel="stylesheet" href="css/site.css" />
 </head>
 <body>
   <header>
     <div class="container nav">
-      <a href="/" class="logo">Operator <span>Pages</span></a>
+      <a href="./" class="logo">Operator <span>Pages</span></a>
       <nav class="nav-links">
-        <a href="/products/">Products</a>
-        <a href="/products/quantumguard.html">QuantumGuard</a>
-        <a href="/docs/">Docs</a>
-        <a href="/access.html">Access</a>
+        <a href="products/">Products</a>
+        <a href="products/quantumguard.html">QuantumGuard</a>
+        <a href="docs/">Docs</a>
+        <a href="faq.html">FAQ</a>
+        <a href="access.html">Access</a>
+        <a class="nav-cta" href="https://buy.stripe.com/5kQaEYc9AewBaJleoN0ZW01" target="_blank" rel="noopener">$490</a>
       </nav>
     </div>
   </header>
@@ -86,13 +30,19 @@
       <div class="container">
         <h1>We don’t promise<br>anything we prove it.</h1>
         <p class="tagline">Deterministic tools for operators who need evidence, not claims.</p>
+        <div class="pill-row">
+          <span class="pill on">Offline</span>
+          <span class="pill on">Deterministic</span>
+          <span class="pill on">Pay once</span>
+          <span class="pill">No SaaS lock-in</span>
+        </div>
         <div class="price-block">
           <div class="price">$490<span>one-time</span></div>
         </div>
         <div>
           <a href="https://buy.stripe.com/5kQaEYc9AewBaJleoN0ZW01" class="cta" target="_blank" rel="noopener">Get Operator Pages →</a>
           <p class="cta-sub">Secure checkout · Instant access</p>
-          <a href="/products/quantumguard.html" class="cta-secondary">Or start with QuantumGuard Operator Pack →</a>
+          <a href="products/quantumguard.html" class="cta-secondary">Or start with QuantumGuard Operator Pack →</a>
         </div>
       </div>
     </section>
@@ -100,39 +50,74 @@
     <section>
       <div class="container">
         <h2>Featured: QuantumGuard</h2>
-        <div class="product-card">
-          <span class="badge">Featured</span>
-          <h3>QuantumGuard + Operator Pack</h3>
-          <p>
-            Single deterministic evidence verifier. Offline. No network. No wall-clock.
-            Three answers only: <strong style="color:var(--white)">PASS · FAIL · INDETERMINATE</strong>.
-            Open-source CONTRACT-v1 stays free. Operator Pack adds signed binaries, air-gap runbook, LICENSE.json, and support.
+        <div class="card">
+          <span class="badge">Operator Pack</span>
+          <h3>Single verifier. Three answers only.</h3>
+          <p style="margin-bottom:14px">
+            Offline evidence verification under frozen <strong style="color:var(--white)">CONTRACT-v1</strong>.
+            No network. No wall-clock. No external trust inside the verifier.
           </p>
-          <p style="margin-bottom:8px"><strong style="color:var(--white)">$490</strong> <span style="color:var(--muted)">one-time · single site</span></p>
-          <a href="/products/quantumguard.html" class="more">Full details →</a>
+          <p style="margin-bottom:14px">
+            <span class="verdict v-pass">PASS</span> ·
+            <span class="verdict v-fail">FAIL</span> ·
+            <span class="verdict v-ind">INDETERMINATE</span>
+          </p>
+          <p style="margin-bottom:16px"><strong style="color:var(--white)">$490</strong> · signed binaries, air-gap runbook, LICENSE.json, support</p>
+          <a class="ext" href="products/quantumguard.html">Full details →</a>
         </div>
       </div>
     </section>
 
     <section>
       <div class="container">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><strong style="color:var(--white)">Seal work offline</strong> — tools emit CONTRACT-v1 evidence packs in the field.</li>
+          <li><strong style="color:var(--white)">Verify offline</strong> — <code>qg verify</code> returns PASS, FAIL, or INDETERMINATE. Nothing else.</li>
+          <li><strong style="color:var(--white)">Own the proof</strong> — pay once for Operator Pack materials; source contract stays free.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
         <h2>Built for operators who ship work that has to stand up.</h2>
-        <div class="features">
+        <div class="features grid-2">
           <div class="feature">
             <h3>Evidence over promises</h3>
             <p>Every claim is backed by sealed, verifiable output. No marketing theater.</p>
           </div>
           <div class="feature">
             <h3>Local-first & deterministic</h3>
-            <p>Tools that run offline, produce the same result every time, and leave a clean audit trail.</p>
+            <p>Same inputs → same verdict. Runs without DNS, cloud, or phone home.</p>
           </div>
           <div class="feature">
             <h3>Pay once. Own it.</h3>
             <p>No subscriptions. No recurring fees. One payment. Permanent access.</p>
           </div>
           <div class="feature">
-            <h3>Field-ready systems</h3>
-            <p>Quoting, sealing, lifecycle evidence, and verification built for real operators in the field.</p>
+            <h3>Field stack</h3>
+            <p>Quoting, sealing, close-out, lifecycle — all QuantumGuard-compatible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Product line</h2>
+        <div class="grid-2">
+          <div class="card">
+            <span class="badge">Featured</span>
+            <h3>QuantumGuard</h3>
+            <p>Verifier + Operator Pack. $490.</p>
+            <a class="ext" href="products/quantumguard.html">Details →</a>
+          </div>
+          <div class="card">
+            <span class="badge muted">Open</span>
+            <h3>VeriQuote · FieldSeal · CloseSeal</h3>
+            <p>Local-first field tools. Source on GitHub.</p>
+            <a class="ext" href="products/">Catalog →</a>
           </div>
         </div>
       </div>
@@ -142,10 +127,11 @@
       <div class="container">
         <h2>Proof is the product.</h2>
         <p>
-          Operator Pages exists for people who are done with tools that talk a big game and fail under pressure.
-          You get systems that generate evidence packs, enforce deterministic behavior, and let the work speak for itself.
+          Done with tools that talk a big game and fail under pressure.
+          Get systems that generate evidence packs, enforce deterministic behavior, and let the work speak.
         </p>
         <a href="https://buy.stripe.com/5kQaEYc9AewBaJleoN0ZW01" class="cta" target="_blank" rel="noopener">Pay $490 — Get Access</a>
+        <p class="cta-sub"><a class="ext" href="faq.html">FAQ</a> · <a class="ext" href="access.html">Access after purchase</a></p>
       </div>
     </section>
   </main>
@@ -154,9 +140,10 @@
     <div class="container">
       <p>Operator Pages LLC · Missouri, USA</p>
       <div class="links">
-        <a href="/products/">Products</a>
-        <a href="/docs/">Docs</a>
-        <a href="/access.html">Access</a>
+        <a href="products/">Products</a>
+        <a href="docs/">Docs</a>
+        <a href="faq.html">FAQ</a>
+        <a href="access.html">Access</a>
         <a href="https://buy.stripe.com/5kQaEYc9AewBaJleoN0ZW01" target="_blank" rel="noopener">Checkout</a>
         <a href="mailto:danpennic@gmail.com">Contact</a>
       </div>
