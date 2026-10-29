@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediaSeal — Operator Pages</title>
+  <meta name="description" content="MediaSeal: local-first media evidence hasher and QuantumGuard sealer for field operators. Offline. Deterministic. Pay once." />
+  <link rel="stylesheet" href="../css/site.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="../" class="logo">Operator <span>Pages</span></a>
+      <nav class="nav-links">
+        <a href="./">Products</a>
+        <a href="quantumguard.html">QuantumGuard</a>
+        <a href="../docs/">Docs</a>
+        <a href="../faq.html">FAQ</a>
+        <a href="../access.html">Access</a>
+        <a class="nav-cta" href="https://buy.stripe.com/5kQaEYc9AewBaJleoN0ZW01" target="_blank" rel="noopener">$490</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section style="border-top:none;padding-top:48px">
+      <div class="container">
+        <h1 style="font-size:clamp(1.8rem,4vw,2.4rem);font-weight:800;letter-spacing:-0.03em;margin-bottom:12px;line-height:1.2">MediaSeal</h1>
+        <p class="lead" style="margin-bottom:24px">Local-first media evidence hasher and QuantumGuard sealer. Hash the photos and videos. Seal the proof. Offline.</p>
+
+        <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:28px">
+          <div class="price">from $69<span style="font-size:0.95rem;font-weight:500;color:var(--muted);margin-left:6px">one-time · Operator SKU</span></div>
+          <a href="mailto:danpennic@gmail.com?subject=MediaSeal%20purchase" class="cta">Buy / Request access →</a>
+        </div>
+
+        <div class="box" style="margin-bottom:28px">
+          <strong style="color:var(--white)">Free:</strong> source on GitHub
+          (<a class="ext" href="https://github.com/danpennic-sys/mediaseal" target="_blank" rel="noopener">github.com/danpennic-sys/mediaseal</a>).<br><br>
+          <strong style="color:var(--white)">Paid Operator / Command / Agency packs:</strong> support, batch/recursive tools, HTML report, reseller rights, white-label options.
+        </div>
+
+        <h2>What it does</h2>
+        <ul style="margin:0 0 16px 1.2em;color:var(--muted)">
+          <li style="margin-bottom:8px">Walks a folder of photos, videos, or PDFs</li>
+          <li style="margin-bottom:8px">Computes deterministic SHA-256 of each file’s exact bytes</li>
+          <li style="margin-bottom:8px">Records name, size, mtime into a canonical payload</li>
+          <li style="margin-bottom:8px">Seals into a QuantumGuard CONTRACT-v1 evidence pack (Ed25519)</li>
+          <li style="margin-bottom:8px">Client verifies offline with free <code>qg verify</code> → PASS / FAIL / INDETERMINATE</li>
+        </ul>
+
+        <h2>SKU options</h2>
+        <table>
+          <tr><th>SKU</th><th>Price</th><th>Includes</th></tr>
+          <tr><td>Operator</td><td>$69</td><td>CLI + key setup guide + 1-year email support</td></tr>
+          <tr><td>Command</td><td>$189</td><td>+ recursive/batch + HTML summary + reseller rights</td></tr>
+          <tr><td>Agency</td><td>$479</td><td>+ white-label HTML + design partner onboarding</td></tr>
+        </table>
+
+        <h2>Stack fit</h2>
+        <p style="color:var(--muted);margin-bottom:20px">
+          Same family as VeriQuote, FieldSeal, JobSeal, CloseSeal, LifecycleSeal.
+          Emits CONTRACT-v1 packs. Pairs with QuantumGuard verifier and Chaser.
+          Media stays local — only hashes and metadata enter the sealed pack.
+        </p>
+
+        <h2>Quick start</h2>
+        <pre style="background:var(--card);padding:16px;border-radius:8px;overflow:auto;color:var(--muted);font-size:0.9rem;margin-bottom:24px">pip install cryptography
+python3 src/mediaseal.py --demo
+python3 src/mediaseal.py --dir ./site-photos --job-id JOB-042 --out sealed.json
+qg verify sealed.json</pre>
+
+        <p style="color:var(--muted);margin-bottom:20px">
+          Purchase and support: <a class="ext" href="mailto:danpennic@gmail.com">danpennic@gmail.com</a>
+        </p>
+        <a href="mailto:danpennic@gmail.com?subject=MediaSeal%20purchase" class="cta">Email to buy →</a>
+        <a href="https://github.com/danpennic-sys/mediaseal" class="cta-secondary" target="_blank" rel="noopener" style="margin-left:12px">View source on GitHub →</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>Operator Pages LLC · Missouri, USA</p>
+      <div class="links">
+        <a href="../">Home</a>
+        <a href="./">Products</a>
+        <a href="../docs/">Docs</a>
+        <a href="../faq.html">FAQ</a>
+        <a href="mailto:danpennic@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
