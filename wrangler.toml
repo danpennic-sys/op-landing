@@ -1,0 +1,13 @@
+# Cloudflare Pages — static site (no build)
+# Connect this repo in Cloudflare Dashboard → Pages → Connect to Git
+# Build command: (empty)
+# Build output directory: /
+# Framework preset: None
+#
+# Custom domain (operatorpages.com) and DNS remain UNVERIFIED until configured
+# in your Cloudflare account. Do not point apex DNS here until you choose
+# Cloudflare Pages as the single primary host.
+
+name = "op-landing"
+compatibility_date = "2024-10-01"
+pages_build_output_dir = "."
