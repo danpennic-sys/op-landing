@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BinderSeal — Operator Pages</title>
-  <meta name="description" content="BinderSeal: local-first evidence binder sealer. Hash a folder of documents into a QuantumGuard CONTRACT-v1 pack. Offline. Deterministic. Pay once." />
+  <meta name="description" content="BinderSeal: turn a folder of documents into one offline-verifiable evidence pack. Pay once." />
   <link rel="stylesheet" href="../css/site.css" />
 </head>
 <body>
@@ -25,56 +25,36 @@
     <section style="border-top:none;padding-top:48px">
       <div class="container">
         <h1 style="font-size:clamp(1.8rem,4vw,2.4rem);font-weight:800;letter-spacing:-0.03em;margin-bottom:12px;line-height:1.2">BinderSeal</h1>
-        <p class="lead" style="margin-bottom:24px">Local-first evidence binder sealer. Hash the folder. Seal the proof. Offline.</p>
+        <p class="lead" style="margin-bottom:24px">Folder in. Sealed proof out. Your client verifies offline.</p>
 
         <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:28px">
-          <div class="price">from $99<span style="font-size:0.95rem;font-weight:500;color:var(--muted);margin-left:6px">one-time · Operator SKU</span></div>
-          <a href="https://buy.stripe.com/test_9B68wO3KH58Y0OY0qcew800" class="cta" target="_blank" rel="noopener">Buy Operator $99 →</a>
+          <div class="price">from $99<span style="font-size:0.95rem;font-weight:500;color:var(--muted);margin-left:6px">one-time</span></div>
+          <a href="https://buy.stripe.com/test_9B68wO3KH58Y0OY0qcew800" class="cta" target="_blank" rel="noopener">Buy $99 →</a>
         </div>
 
-        <div class="box" style="margin-bottom:28px">
-          <strong style="color:var(--white)">Free:</strong> source on GitHub
-          (<a class="ext" href="https://github.com/danpennic-sys/binderseal" target="_blank" rel="noopener">github.com/danpennic-sys/binderseal</a>).<br><br>
-          <strong style="color:var(--white)">Checkout:</strong> Stripe Payment Links below are <strong>test mode</strong> until live products are published. Card <code>4242 4242 4242 4242</code> for test purchases.
-        </div>
-
-        <h2>What it does</h2>
-        <ul style="margin:0 0 16px 1.2em;color:var(--muted)">
-          <li style="margin-bottom:8px">Walks a folder of reports, PDFs, CSVs, logs, checklists, or any files</li>
-          <li style="margin-bottom:8px">Computes deterministic SHA-256 of each file’s exact bytes</li>
-          <li style="margin-bottom:8px">Builds a sorted content-addressed manifest (path, size, hash)</li>
-          <li style="margin-bottom:8px">Seals into a QuantumGuard CONTRACT-v1 evidence pack (Ed25519)</li>
-          <li style="margin-bottom:8px">Optional HTML report for auditors</li>
-          <li style="margin-bottom:8px">Client verifies offline with free <code>qg verify</code> → PASS / FAIL / INDETERMINATE</li>
+        <h2>What you get</h2>
+        <ul style="margin:0 0 20px 1.2em;color:var(--muted)">
+          <li style="margin-bottom:8px">Point it at any folder of job docs</li>
+          <li style="margin-bottom:8px">Get one sealed file your client can check</li>
+          <li style="margin-bottom:8px">Works offline — no account required to verify</li>
         </ul>
 
-        <h2>SKU options</h2>
+        <h2>Pricing</h2>
         <table>
-          <tr><th>SKU</th><th>Price</th><th>Includes</th><th>Checkout</th></tr>
-          <tr><td>Operator</td><td>$99</td><td>CLI + key setup + 1-year email support</td><td><a class="ext" href="https://buy.stripe.com/test_9B68wO3KH58Y0OY0qcew800" target="_blank" rel="noopener">Pay $99</a></td></tr>
-          <tr><td>Command</td><td>$249</td><td>+ recursive/report + reseller rights</td><td><a class="ext" href="https://buy.stripe.com/test_fZu6oGbd9bxm8hqb4Qew801" target="_blank" rel="noopener">Pay $249</a></td></tr>
-          <tr><td>Agency</td><td>$599</td><td>+ white-label HTML + design partner onboarding</td><td><a class="ext" href="https://buy.stripe.com/test_bJeaEWa95cBqbtCdcYew802" target="_blank" rel="noopener">Pay $599</a></td></tr>
+          <tr><th>Plan</th><th>Price</th><th></th></tr>
+          <tr><td>Operator</td><td>$99</td><td><a class="ext" href="https://buy.stripe.com/test_9B68wO3KH58Y0OY0qcew800" target="_blank" rel="noopener">Buy</a></td></tr>
+          <tr><td>Command</td><td>$249</td><td><a class="ext" href="https://buy.stripe.com/test_fZu6oGbd9bxm8hqb4Qew801" target="_blank" rel="noopener">Buy</a></td></tr>
+          <tr><td>Agency</td><td>$599</td><td><a class="ext" href="https://buy.stripe.com/test_bJeaEWa95cBqbtCdcYew802" target="_blank" rel="noopener">Buy</a></td></tr>
         </table>
 
-        <h2>Stack fit</h2>
-        <p style="color:var(--muted);margin-bottom:20px">
-          Same family as MediaSeal, VeriQuote, FieldSeal, JobSeal, CloseSeal, LifecycleSeal.
-          Emits CONTRACT-v1 packs. Pairs with QuantumGuard verifier.
-          Files stay local — only hashes and metadata enter the sealed pack.
-        </p>
-
-        <h2>Quick start</h2>
-        <pre style="background:var(--card);padding:16px;border-radius:8px;overflow:auto;color:var(--muted);font-size:0.9rem;margin-bottom:24px">pip install cryptography
-pip install .
-binderseal --demo
-binderseal --dir ./audit-packet --binder-id AUDIT-042 --recursive --report --out sealed.json
+        <h2>Try it</h2>
+        <pre style="background:var(--card);padding:16px;border-radius:8px;overflow:auto;color:var(--muted);font-size:0.9rem;margin-bottom:16px">pip install cryptography && pip install .
+binderseal --dir ./docs --binder-id JOB-42 --out sealed.json
 qg verify sealed.json</pre>
+        <p style="color:var(--muted);font-size:0.85rem;margin-bottom:24px">Source free on <a class="ext" href="https://github.com/danpennic-sys/binderseal" target="_blank" rel="noopener">GitHub</a>. Checkout links are test mode until live billing is on.</p>
 
-        <p style="color:var(--muted);margin-bottom:20px">
-          Support: <a class="ext" href="mailto:danpennic@gmail.com">danpennic@gmail.com</a>
-        </p>
-        <a href="https://buy.stripe.com/test_9B68wO3KH58Y0OY0qcew800" class="cta" target="_blank" rel="noopener">Buy Operator $99 →</a>
-        <a href="https://github.com/danpennic-sys/binderseal" class="cta-secondary" target="_blank" rel="noopener" style="margin-left:12px">View source on GitHub →</a>
+        <a href="https://buy.stripe.com/test_9B68wO3KH58Y0OY0qcew800" class="cta" target="_blank" rel="noopener">Buy $99 →</a>
+        <a href="https://github.com/danpennic-sys/binderseal" class="cta-secondary" target="_blank" rel="noopener" style="margin-left:12px">Source →</a>
       </div>
     </section>
   </main>
