@@ -29,20 +29,20 @@
 
         <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:28px">
           <div class="price">from $99<span style="font-size:0.95rem;font-weight:500;color:var(--muted);margin-left:6px">one-time · Operator SKU</span></div>
-          <a href="mailto:danpennic@gmail.com?subject=BinderSeal%20purchase" class="cta">Buy / Request access →</a>
+          <a href="https://buy.stripe.com/test_9B68wO3KH58Y0OY0qcew800" class="cta" target="_blank" rel="noopener">Buy Operator $99 →</a>
         </div>
 
         <div class="box" style="margin-bottom:28px">
           <strong style="color:var(--white)">Free:</strong> source on GitHub
           (<a class="ext" href="https://github.com/danpennic-sys/binderseal" target="_blank" rel="noopener">github.com/danpennic-sys/binderseal</a>).<br><br>
-          <strong style="color:var(--white)">Paid Operator / Command / Agency packs:</strong> support, recursive/report tools, HTML report, reseller rights, white-label options.
+          <strong style="color:var(--white)">Checkout:</strong> Stripe Payment Links below are <strong>test mode</strong> until live products are published. Card <code>4242 4242 4242 4242</code> for test purchases.
         </div>
 
         <h2>What it does</h2>
         <ul style="margin:0 0 16px 1.2em;color:var(--muted)">
           <li style="margin-bottom:8px">Walks a folder of reports, PDFs, CSVs, logs, checklists, or any files</li>
           <li style="margin-bottom:8px">Computes deterministic SHA-256 of each file’s exact bytes</li>
-          <li style="margin-bottom:8px">Builds a sorted manifest (path, size, mtime)</li>
+          <li style="margin-bottom:8px">Builds a sorted content-addressed manifest (path, size, hash)</li>
           <li style="margin-bottom:8px">Seals into a QuantumGuard CONTRACT-v1 evidence pack (Ed25519)</li>
           <li style="margin-bottom:8px">Optional HTML report for auditors</li>
           <li style="margin-bottom:8px">Client verifies offline with free <code>qg verify</code> → PASS / FAIL / INDETERMINATE</li>
@@ -50,10 +50,10 @@
 
         <h2>SKU options</h2>
         <table>
-          <tr><th>SKU</th><th>Price</th><th>Includes</th></tr>
-          <tr><td>Operator</td><td>$99</td><td>CLI + key setup guide + 1-year email support</td></tr>
-          <tr><td>Command</td><td>$249</td><td>+ recursive/report + reseller rights</td></tr>
-          <tr><td>Agency</td><td>$599</td><td>+ white-label HTML + design partner onboarding</td></tr>
+          <tr><th>SKU</th><th>Price</th><th>Includes</th><th>Checkout</th></tr>
+          <tr><td>Operator</td><td>$99</td><td>CLI + key setup + 1-year email support</td><td><a class="ext" href="https://buy.stripe.com/test_9B68wO3KH58Y0OY0qcew800" target="_blank" rel="noopener">Pay $99</a></td></tr>
+          <tr><td>Command</td><td>$249</td><td>+ recursive/report + reseller rights</td><td><a class="ext" href="https://buy.stripe.com/test_fZu6oGbd9bxm8hqb4Qew801" target="_blank" rel="noopener">Pay $249</a></td></tr>
+          <tr><td>Agency</td><td>$599</td><td>+ white-label HTML + design partner onboarding</td><td><a class="ext" href="https://buy.stripe.com/test_bJeaEWa95cBqbtCdcYew802" target="_blank" rel="noopener">Pay $599</a></td></tr>
         </table>
 
         <h2>Stack fit</h2>
@@ -65,14 +65,15 @@
 
         <h2>Quick start</h2>
         <pre style="background:var(--card);padding:16px;border-radius:8px;overflow:auto;color:var(--muted);font-size:0.9rem;margin-bottom:24px">pip install cryptography
-python3 src/binderseal.py --demo
-python3 src/binderseal.py --dir ./audit-packet --binder-id AUDIT-042 --recursive --report --out sealed.json
+pip install .
+binderseal --demo
+binderseal --dir ./audit-packet --binder-id AUDIT-042 --recursive --report --out sealed.json
 qg verify sealed.json</pre>
 
         <p style="color:var(--muted);margin-bottom:20px">
-          Purchase and support: <a class="ext" href="mailto:danpennic@gmail.com">danpennic@gmail.com</a>
+          Support: <a class="ext" href="mailto:danpennic@gmail.com">danpennic@gmail.com</a>
         </p>
-        <a href="mailto:danpennic@gmail.com?subject=BinderSeal%20purchase" class="cta">Email to buy →</a>
+        <a href="https://buy.stripe.com/test_9B68wO3KH58Y0OY0qcew800" class="cta" target="_blank" rel="noopener">Buy Operator $99 →</a>
         <a href="https://github.com/danpennic-sys/binderseal" class="cta-secondary" target="_blank" rel="noopener" style="margin-left:12px">View source on GitHub →</a>
       </div>
     </section>
