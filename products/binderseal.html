@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BinderSeal — Operator Pages</title>
-  <meta name="description" content="BinderSeal: turn a folder of documents into one offline-verifiable evidence pack. Pay once." />
+  <meta name="description" content="Seal a folder of job docs. Client verifies offline. Pay once." />
   <link rel="stylesheet" href="../css/site.css" />
 </head>
 <body>
@@ -23,38 +23,26 @@
   </header>
   <main>
     <section style="border-top:none;padding-top:48px">
-      <div class="container">
+      <div class="container" style="max-width:560px">
         <h1 style="font-size:clamp(1.8rem,4vw,2.4rem);font-weight:800;letter-spacing:-0.03em;margin-bottom:12px;line-height:1.2">BinderSeal</h1>
-        <p class="lead" style="margin-bottom:24px">Folder in. Sealed proof out. Your client verifies offline.</p>
-
-        <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:28px">
-          <div class="price">from $99<span style="font-size:0.95rem;font-weight:500;color:var(--muted);margin-left:6px">one-time</span></div>
-          <a href="https://buy.stripe.com/test_9B68wO3KH58Y0OY0qcew800" class="cta" target="_blank" rel="noopener">Buy $99 →</a>
-        </div>
-
-        <h2>What you get</h2>
-        <ul style="margin:0 0 20px 1.2em;color:var(--muted)">
-          <li style="margin-bottom:8px">Point it at any folder of job docs</li>
-          <li style="margin-bottom:8px">Get one sealed file your client can check</li>
-          <li style="margin-bottom:8px">Works offline — no account required to verify</li>
-        </ul>
-
-        <h2>Pricing</h2>
-        <table>
-          <tr><th>Plan</th><th>Price</th><th></th></tr>
-          <tr><td>Operator</td><td>$99</td><td><a class="ext" href="https://buy.stripe.com/test_9B68wO3KH58Y0OY0qcew800" target="_blank" rel="noopener">Buy</a></td></tr>
-          <tr><td>Command</td><td>$249</td><td><a class="ext" href="https://buy.stripe.com/test_fZu6oGbd9bxm8hqb4Qew801" target="_blank" rel="noopener">Buy</a></td></tr>
-          <tr><td>Agency</td><td>$599</td><td><a class="ext" href="https://buy.stripe.com/test_bJeaEWa95cBqbtCdcYew802" target="_blank" rel="noopener">Buy</a></td></tr>
-        </table>
-
-        <h2>Try it</h2>
-        <pre style="background:var(--card);padding:16px;border-radius:8px;overflow:auto;color:var(--muted);font-size:0.9rem;margin-bottom:16px">pip install cryptography && pip install .
-binderseal --dir ./docs --binder-id JOB-42 --out sealed.json
-qg verify sealed.json</pre>
-        <p style="color:var(--muted);font-size:0.85rem;margin-bottom:24px">Source free on <a class="ext" href="https://github.com/danpennic-sys/binderseal" target="_blank" rel="noopener">GitHub</a>. Checkout links are test mode until live billing is on.</p>
+        <p class="lead" style="margin-bottom:28px">Seal the folder. Send the proof. They verify offline.</p>
 
         <a href="https://buy.stripe.com/test_9B68wO3KH58Y0OY0qcew800" class="cta" target="_blank" rel="noopener">Buy $99 →</a>
-        <a href="https://github.com/danpennic-sys/binderseal" class="cta-secondary" target="_blank" rel="noopener" style="margin-left:12px">Source →</a>
+        <p style="color:var(--muted);margin:20px 0 8px;font-size:0.9rem">Also $249 · $599 — same checkout, higher seats.</p>
+        <p style="color:var(--muted);font-size:0.85rem;margin-bottom:32px">
+          <a class="ext" href="https://buy.stripe.com/test_fZu6oGbd9bxm8hqb4Qew801" target="_blank" rel="noopener">$249</a>
+          ·
+          <a class="ext" href="https://buy.stripe.com/test_bJeaEWa95cBqbtCdcYew802" target="_blank" rel="noopener">$599</a>
+          ·
+          <a class="ext" href="https://github.com/danpennic-sys/binderseal" target="_blank" rel="noopener">source</a>
+        </p>
+
+        <details style="color:var(--muted);font-size:0.9rem">
+          <summary style="cursor:pointer;color:var(--white)">How do I run it?</summary>
+          <pre style="background:var(--card);padding:14px;border-radius:8px;overflow:auto;margin-top:12px;font-size:0.85rem">pip install cryptography && pip install .
+binderseal --dir ./docs --binder-id JOB-42 --out sealed.json
+qg verify sealed.json</pre>
+        </details>
       </div>
     </section>
   </main>
@@ -65,7 +53,6 @@ qg verify sealed.json</pre>
         <a href="../">Home</a>
         <a href="./">Products</a>
         <a href="../docs/">Docs</a>
-        <a href="../faq.html">FAQ</a>
         <a href="mailto:danpennic@gmail.com">Contact</a>
       </div>
     </div>
