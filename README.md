@@ -4,14 +4,14 @@ Public marketing site for **Operator Pages** — operatorpages.com
 
 **Stack:** static HTML (no build step)  
 **Hosts:** Cloudflare Pages (primary target) **and** GitHub Pages  
-**Featured product:** QuantumGuard + Operator Pack ($490)  
-**Stripe:** `https://buy.stripe.com/5kQaEYc9AewBaJleoN0ZW01` (do not change without updating all CTAs)
+**Featured product:** QuantumGuard + Operator Pack  
+**Stripe:** `https://buy.stripe.com/dRmaEYb5w2NT2cP2G50ZW03` (Operator Pages + QuantumGuard yearly — do not change without updating all CTAs)
 
 ## Pages
 
 | Path | Purpose |
 |------|---------|
-| `/` | Home + $490 CTA |
+| `/` | Home + checkout CTA |
 | `/products/` | Catalog |
 | `/products/quantumguard.html` | QuantumGuard Operator Pack detail |
 | `/docs/` | Public contract links + licensed doc notes |
